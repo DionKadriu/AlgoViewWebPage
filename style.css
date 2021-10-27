@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #354649;
+    padding: 1rem 8rem;
+    z-index: 1000;
+
+}
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/*
+how to select the elements in the navbar (all 4 because of n)
+ */
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #E0E7E9;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{
+    color: #A3C6C4 ;
+}
+#navbarSupportedContent > button{
+    background: #E0E7E9  ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border-color: #E0E7E9;
+}
+
+.mid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mid video{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mid .hero{
+    position: relative;
+}
+
+.mid .hero p{
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+    padding-bottom: 1rem;
+}
+
+.mid .hero a{
+    background: #A3C6C4  ;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.mid .hero a:hover{
+    background: #E0E7E9;
+}
+
+.about{
+    background: #354649     ;
+}
+
+.about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.about .text h2{
+    color: #6C7A89;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.about .text h4{
+    color: #F7F5F4;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.about .text a{
+    background: steelblue;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #111;
+}
+
+.discovery{
+
+}
+
+.discovery .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.discovery .text h2{
+    color: #6C7A89;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.discovery .text h4{
+    color: #354649;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.discovery .text a{
+    background: #111;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.service{
+    background: #354649;
+}
+
+.service .one{
+    background: #E0E7E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 7px;
+}
+
+body > footer{
+    background: #354649!important;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border: none;
+}
+
+body > footer .container{
+    color: #E0E7E9;
+}
+
+@media screen and (max-width: 988px) {
+    .navbar{
+        padding: 1rem 8rem;
+    }
+
+    #navbarSupportedContent > ul{
+        padding-left: 0.8rem;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding:0.8rem 0rem;
+    }
+
+    .mid .hero h2{
+        font-size: 2.5rem;
+    }
+
+    .mid .hero p{
+        font-size: 1.1rem;
+    }
+
+    .mid .hero a{
+        font-size: 0.9rem;
+    }
+}
+
