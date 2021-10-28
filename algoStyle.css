@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600');
 *{
     margin: 0;
@@ -88,7 +87,7 @@ how to select the elements in the navbar (all 4 because of n)
 }
 
 .darkBackground{
-    background: #354649     ;
+    background: #354649;
 }
 
 .darkBackground .text{
@@ -203,4 +202,3 @@ body > footer .container{
         font-size: 0.9rem;
     }
 }
-

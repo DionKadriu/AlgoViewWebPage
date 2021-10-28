@@ -88,7 +88,7 @@ how to select the elements in the navbar (all 4 because of n)
 }
 
 .about{
-    background: #354649     ;
+    background: #354649;
 }
 
 .about .text{
@@ -113,15 +113,13 @@ how to select the elements in the navbar (all 4 because of n)
     letter-spacing: 1.5px;
 }
 
-.about .text a{
-    background: steelblue;
+.downloadBook a{
+    background: #A3C6C4  ;
     font-weight: 600;
     padding: 0.6rem 1.4rem;
     border-radius: 30px;
     text-decoration: none;
-    color: #111;
 }
-
 .discovery{
 
 }
@@ -209,3 +207,33 @@ body > footer .container{
     }
 }
 
+#downloadBook > div > div.text.col-lg-6.col-md.col-12 > button{
+    background: forestgreen  ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border-color: #E0E7E9;
+}
+#scheduleMeeting > div > div > button{
+    background: #E0E7E9  ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border-color: #E0E7E9;
+}
+#scheduleMeeting{
+    background: #354649;
+}
+#scheduleMeeting > div > div > p > span{
+    color: white;
+}
+
+#scheduleMeeting > div > div >h6{
+    color: white;
+}
+#scheduleMeeting > div > div >h2{
+    color: white;
+}
+#scheduleMeeting > div > div >h6{
+    color: white;
+}
