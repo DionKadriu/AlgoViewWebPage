@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #354649;
+    padding: 1rem 8rem;
+    z-index: 1000;
+
+}
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/*
+how to select the elements in the navbar (all 4 because of n)
+ */
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #E0E7E9;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active
+{
+    color: #A3C6C4 ;
+}
+
+#navbarSupportedContent > button{
+    background: #E0E7E9  ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border-color: #E0E7E9;
+}
+#navbarSupportedContent > button:hover {
+    background: #A3C6C4 ;
+}
+
+body > footer{
+    background: #354649!important;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border: none;
+}
+
+body > footer .container{
+    color: #E0E7E9;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("interviewPrepFiles/p.jpg");
+    min-height: 100vh;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#buyingPlan > div > div > div.card.card-pricing.popular.shadow.text-center.px-3.mb-4 > span{
+   background-color: #354649 ;
+    color: #354649;
+}
+#buyingPlan > div > div > div:nth-child(n) > span{
+    color: #354649;background-color: #354649;
+}
+#buyingPlan > div > div > div.card.card-pricing.popular.shadow.text-center.px-3.mb-4 > div.bg-transparent.card-header.pt-4.border-0 > h1 > span.price{
+    color: #354649;
+}
+.card-pricing.popular {
+    z-index: 1;
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+}
+
+#buyingPlan\  > div > div > div:nth-child(1) > span{
+    color: #354649;
+}
+body > footer{
+    background: #354649!important;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border: none;
+}
+
+body > footer .container{
+    color: #E0E7E9;
+}
+
+#buyingPlan > div > div > div:nth-child(n) > div.card-body.pt-0 > a > button{
+    background: #354649;
+    color: #E0E7E9;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border-color: #E0E7E9
+}
+#buyingPlan > div > div > div:nth-child(n) > div.card-body.pt-0 > a > button:hover{
+    background: #A3C6C4;
+    color: #354649;
+}
+#downloadBook > div > div > h2{
+    font-weight:80 ;
+}
+#buyingPlan > div > div > div:nth-child(n){
+    background-color: #E0E7E9;
+}
+#buyingPlan > div > div > div:nth-child(n) > div.card-body.pt-0 > ul > li:nth-child(n){
+    color: #354649;
+}
+#buyingPlan > div > div > div.card.card-pricing.popular.shadow.text-center.px-3.mb-4 > div.card-body.pt-0 > ul > li:nth-child(n){
+    color: #354649;
+
+}
+#buyingPlan > div > div > div:nth-child(n) > div.card-body.pt-0 > ul > li:nth-child(n){
+    color: #354649;
+}
+#buyingPlan > div > div > div.card.card-pricing.popular.shadow.text-center.px-3.mb-4 > div.bg-transparent.card-header.pt-4.border-0 > h1 > span.h6.text-muted.ml-2{
+    color: #354649;
+
+}

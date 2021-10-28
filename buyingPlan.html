@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 4 Price Table UI Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="buyingPlan.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">AlgoView</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown">Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="algorithmPage.html">Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="dataStructuresPage.html">Data Structures</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="">Interview Prep</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+            <button class="btn text-dark" type="submit">Sign In</button>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+
+<section id="buyingPlan">
+    <div class="container mb-5 mt-5">
+        <div class="pricing card-deck flex-column flex-md-row mb-3">
+            <div class="card card-pricing text-center px-3 mb-4">
+                <span class="h6 w-60 mx-auto px-5 py-2 mt-3 mb-2 rounded-bottom rounded-top text-white shadow-sm">Rookie</span>
+                <hr class="my-2">
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="15"><span
+                            class="price"></span><span class="h6 text-muted ml-2">Free Of Charge
+                    </span></h1>
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4">
+                        <li>Top 5 Algorithms & Data Structures needed</li>
+                        <li>Ads</li>
+                        <li>Paid Booked Meetings
+                         </li>
+                        <li>No in-browser IDE  languages included.</li>
+                        <li> Free Book</li>
+                        <li> </li>
+
+                    </ul>
+                    <a href="errorPage.html"><button class="btn" type="submit">Order Now</button></a>
+                </div>
+            </div>
+            <div class="card card-pricing popular shadow text-center px-3 mb-4">
+                <span class="h6 w-60 mx-auto px-5 py-2 mt-3 mb-2 rounded-bottom rounded-top  text-white shadow-sm">Semi-Pro</span>
+                 <hr class="my-2">
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h1 class="h1 font-weight-normal  text-center mb-0" data-pricing-value="15">&#163<span
+                            class="price">5</span><span class="h6 text-muted ml-2">/ per month</span></h1>
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4">
+                        <li>10 Most Important Algorithms & Data Structures</li>
+                        <li>No Ads</li>
+                        <li>4 Free Booked Meetings</li>
+                        <li>A feature-rich in-browser IDE in 3 languages.</li>
+                        <li>Written code solutions in 3 languages.</li>
+                    </ul>
+                    <a href="errorPage.html"><button class="btn" type="submit">Order Now</button></a>
+                </div>
+            </div>
+            <div class="card card-pricing text-center px-3 mb-4">
+                <span class="h6 w-60 mx-auto px-5 py-2 mt-3 mb-2 rounded-bottom rounded-top  text-white shadow-sm">All-Star</span>
+                <hr class="my-2">
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h1 class="h1 font-weight-normal  text-center mb-0" data-pricing-value="45">&#163<span
+                            class="price">8</span><span class="h6 text-muted ml-2">/ per month</span></h1>
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4">
+                        <li>Every Algorithms & Data Structures you need</li>
+                        <li>No Ads</li>
+                        <li>Unlimited Booked Meetings</li>
+                        <li>A feature-rich in-browser IDE in 9 languages.</li>
+                        <li>Written code solutions in 9 languages.</li>
+                    </ul>
+                    <a href="errorPage.html"><button class="btn" type="submit">Order Now</button></a>                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer class="page-footer font-small text-light pt-4">-->
+
+<!--    &lt;!&ndash; Footer Elements &ndash;&gt;-->
+<!--    <div class="container">-->
+
+<!--        &lt;!&ndash; Call to action &ndash;&gt;-->
+<!--        <ul class="list-unstyled list-inline text-center py-2">-->
+<!--            <li class="list-inline-item">-->
+<!--                <a href="#" class="btn text-light btn-outline-white btn-rounded">Register for free</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        &lt;!&ndash; Call to action &ndash;&gt;-->
+
+<!--    </div>-->
+<!--    &lt;!&ndash; Footer Elements &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
+<!--    <div class="footer-copyright text-center py-3">© 2020 Copyright:-->
+<!--        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
+
+<!--</footer>-->
+
+<!-- Footer -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</html>
+
