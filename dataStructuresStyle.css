@@ -37,12 +37,17 @@ how to select the elements in the navbar (all 4 because of n)
     color: #A3C6C4;
 }
 
-#navbarSupportedContent > button {
-    background: #E0E7E9;
+#navbarSupportedContent > a > button{
+    background: #E0E7E9  ;
     font-weight: 600;
     padding: 0.4rem 1.4rem;
     border-radius: 30px;
     border-color: #E0E7E9;
+}
+#navbarSupportedContent > a > button:hover{
+    background: #A3C6C4   ;
+    border-color: #E0E7E9;
+    transform: scale(1.1);
 }
 
 .mid {
@@ -206,3 +211,24 @@ body > footer .container {
         font-size: 0.9rem;
     }
 }
+
+/*footer*/
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: cornflowerblue;
+}
+
+.fa-google-plus-g {
+    color: #dd4b39;
+}
+
+.fa-linkedin-in {
+    color: #517fa8;
+}
+.fa-facebook:hover ,.fa-twitter:hover,.fa-google-plus-g:hover,.fa-linkedin-in:hover{
+    transform: scale(1.1);
+}
+/*footer*/
