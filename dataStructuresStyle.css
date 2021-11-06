@@ -23,6 +23,20 @@ html {
     font-weight: 700;
 }
 
+/*settings*/
+#dropdownMenuButton{
+
+    margin-left: 10px;
+    border: none;
+    color: #E0E7E9;
+}
+.fa-cog{
+    color: #E0E7E9;
+}
+#inputGroupSelect01{
+    padding:2px;
+}
+/*settings*/
 /*
 how to select the elements in the navbar (all 4 because of n)
  */
@@ -52,7 +66,7 @@ how to select the elements in the navbar (all 4 because of n)
 
 .mid {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -211,6 +225,86 @@ body > footer .container {
         font-size: 0.9rem;
     }
 }
+
+/*progress bar*/
+.skill {
+    width: 160px;
+    height: 160px;
+    /*background: cornflowerblue;*/
+    position: relative;
+
+}
+
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+    font-weight: 600;
+    color: #555;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset:165;
+
+    }
+}
+#progressBar {
+    background: #E0E7E9;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progressBar > h2{
+    justify-content: left;
+    text-position: relative;
+}
+/*progress bar*/
+
+
+
 
 /*footer*/
 .fa-facebook {

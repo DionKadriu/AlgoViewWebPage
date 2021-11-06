@@ -22,7 +22,20 @@ html {
     font-size: 1.4rem;
     font-weight: 700;
 }
+/*settings*/
+#dropdownMenuButton{
 
+    margin-left: 10px;
+    border: none;
+    color: #E0E7E9;
+}
+.fa-cog{
+    color: #E0E7E9;
+}
+#inputGroupSelect01{
+    padding:2px;
+}
+/*settings*/
 /*
 how to select the elements in the navbar (all 4 because of n)
  */
@@ -155,8 +168,6 @@ body > footer .container {
     }
 }
 
-#editor {
-}
 
 #editor > div > div.text.align-items-center.col-lg-6.col-md.col-12.justify-content-center.text-center > div > div > a:nth-child(n) > button {
     background: #E0E7E9;
@@ -244,6 +255,9 @@ body > footer .container {
 #flipCards > div > div > div:nth-child(n) > div > div > div.flip-card-front {
     justify-content: center;
 
+}
+#recommendedSite{
+    background-color: #E0E7E9;
 }
 
 #editor{

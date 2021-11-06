@@ -22,6 +22,21 @@ html{
     font-weight: 700;
 }
 
+/*settings*/
+#dropdownMenuButton{
+
+    margin-left: 10px;
+    border: none;
+    color: #E0E7E9;
+}
+.fa-cog{
+    color: #E0E7E9;
+}
+#inputGroupSelect01{
+    padding:2px;
+}
+/*settings*/
+
 /*
 how to select the elements in the navbar (all 4 because of n)
  */

@@ -10,8 +10,8 @@
 <body data-spy="scroll" data-target="navbarSupportedContent ">
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">AlgoView</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-atom fa-1x"></i>AlgoView</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="algorithmPage.html">Algorithms</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Interview Prep</a>
+                        <a class="dropdown-item" href="InterviewPrep.html">Interview Prep</a>
                     </div>
                 </li>
 
@@ -42,8 +42,31 @@
                 </li>
 
             </ul>
-            <a href="signInPage.html"> <button class="btn text-dark" type="submit">Sign In</button></a>
+            <a href="signInPage.html">
+                <button class="btn text-dark" type="submit">Sign In</button>
+            </a>
+            <div class="btn-group">
+                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href=""><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="changeFont">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Change the font
+                        </label>
+                    </div></a></li>
+                    <li><a class="dropdown-item" href=""><a class="dropdown-item" href=""><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="changeColors">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Change the color
+                        </label>
+                    </div></a></a></li>
+                    <li><a class="dropdown-item" href="#">Dictate <i class="fas fa-microphone"></i></a></li>
+                </ul>
+            </div>
         </div>
+
     </nav>
 
     <div class="mid">
@@ -53,13 +76,53 @@
         <div class="hero text-center">
             <h2 class="text-light display-4 font-weight-bold">Welcome to Data Structures</h2>
             <p class="text-light mx-auto">Continue learning to ace the interview</p>
-            <a class="text-dark" href="#">Crash Course</a>
+            <a class="text-dark" href="Editor.html">Practice</a>
         </div>
     </div>
 </header>
 
 
-<!--The small sections begin here-->
+<!--progress bar-->
+<section id="progressBar">
+    <div class="text col-sm-4 justify-content-center text-center">
+        <h2>Data Structures Progress</h2>
+    </div>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    65%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+                <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63"/>
+                    <stop offset="100%" stop-color="#673ab7"/>
+                </linearGradient>
+            </defs>
+            <circle cx="80  " cy="80" r="69.3" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <script>
+        let number = document.getElementById("number")
+        let counter = 0;
+        setInterval(() => {
+            if (counter === 65) {
+                clearInterval();
+            } else {
+                counter += 1;
+                number.innerHTML = counter + "%"
+            }
+
+        }, 30)
+
+    </script>
+
+</section>
+
+<!--progress bar-->
 
 <!--Arrays-->
 <section id="arrays" class="lightBackground py-5">
@@ -318,8 +381,8 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        University of Stirling
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        AlgoView
     </div>
     <!-- Copyright -->
 

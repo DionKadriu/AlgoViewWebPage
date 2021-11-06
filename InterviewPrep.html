@@ -12,7 +12,7 @@
 <body data-spy="scroll" data-target="navbarSupportedContent ">
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#"><i class="fas fa-atom fa-1x"></i>AlgoView</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +25,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">About</a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-bs-toggle="dropdown">Products
@@ -34,32 +35,104 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="algorithmPage.html">Algorithms</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Interview Prep</a>
+                        <a class="dropdown-item" href="InterviewPrep.html">Interview Prep</a>
                     </div>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="errorPage.html">Contact</a>
+                    <a class="nav-link" href="contactPage.html">Contact</a>
                 </li>
 
             </ul>
             <a href="signInPage.html">
                 <button class="btn text-dark" type="submit">Sign In</button>
             </a>
+            <div class="btn-group">
+                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="changeFont">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Change the font
+                            </label>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href=""><a class="dropdown-item" href="">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="changeColors">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Change the color
+                            </label>
+                        </div>
+                    </a></a></li>
+                    <li><a class="dropdown-item" href="#">Dictate <i class="fas fa-microphone"></i></a></li>
+                </ul>
+            </div>
         </div>
+
     </nav>
 
     <div class="mid">
         <video autoplay muted loop>
-            <source class="embed-responsive" src="dataStructuresFiles/codingVideo.mp4" type="video/mp4">
+            <source class="embed-responsive" src="interviewPrepFiles/interviewVideo.mp4" type="video/mp4">
         </video>
         <div class="hero text-center">
-            <h2 class="text-light display-4 font-weight-bold">Interview Prep done right</h2>
-            <p class="text-light mx-auto">Prepare for your interviews with the help of certified specialists by
-                scheduling a meeting</p>
-            <a class="text-dark" href="#">Schedule</a>
+            <h2 class="text-light display-4 font-weight-bold">Succeed in your interview</h2>
+            <p class="text-light mx-auto ">Prepare for your interviews with the help of certified specialists.<br>Pick a
+                date and schedule your meeting </p>
+
+
+            <a class="text-dark" href="errorPage.html">Schedule</a>
         </div>
     </div>
 </header>
+
+<!--progress bar-->
+<section id="progressBar">
+    <div class="text col-sm-4 justify-content-center text-center">
+        <h2>Interview Prep Progress</h2>
+    </div>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    65%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+                <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63"/>
+                    <stop offset="100%" stop-color="#673ab7"/>
+                </linearGradient>
+            </defs>
+            <circle cx="80  " cy="80" r="69.3" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <script>
+        let number = document.getElementById("number")
+        let counter = 0;
+        setInterval(() => {
+            if (counter === 5) {
+                clearInterval();
+            } else {
+                counter += 1;
+                number.innerHTML = counter + "%"
+            }
+
+        }, 270)
+
+    </script>
+
+</section>
+
+<!--progress bar-->
+
 
 <section id="service" class="service py-5">
     <div class="col mx-auto align-items-center my-5">
@@ -71,28 +144,25 @@
             <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
                 <img class="img-fluid w-100" src="HomePage/img4.jpg" alt="">
                 <h5 class="font-weight-bold pt-4">Fit questions</h5>
-                <p>Remember, the main purpose of behavioural questions is to test your fit for the position you’re
-                    applying to. Hence, the key is to prepare 3-4 stories gearing towards the specific job requirements
-                    (professional experience, attributes, character, etc). </p>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aspernatur consequatur culpa dolore doloremque enim hic impedit inventore labore molestias mollitia quidem rerum sint, unde ut vitae voluptatibus!</span>
+
+                </p>
             </div>
 
 
             <div class="one col-lg-3 col-md-3 col-12 w-25 m-2 ">
                 <img class="img-fluid w-100" src="HomePage/img5.jpg" alt="">
                 <h5 class="font-weight-bold pt-4">Technical questions</h5>
-                <p>Data structures present a way of organizing and storing data in computers so that
-                    we can perform operations on the data
-                    in a more efficient way. They are used in almost every program or software system.</p>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aspernatur consequatur culpa dolore doloremque enim hic impedit inventore labore molestias mollitia quidem rerum sint, unde ut vitae voluptatibus!</span>
+                </p>
             </div>
 
             <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
                 <img class="img-fluid w-100" src="HomePage/img11.jpg" alt="">
                 <h5 class="font-weight-bold pt-4">Brain-Teaser Questions</h5>
-                <p>Tired of learning algorithms and data structures? Hop onto this less technical section
-                    where we train you to perform under stressful interview conditions. At the end, youlllll
-                    lll
-                    ll
-                    .</p>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aspernatur consequatur culpa dolore doloremque enim
+                    impedit inventore labore molestias adipisicing</span>
+                </p>
             </div>
         </div>
     </div>
@@ -102,10 +172,10 @@
 <section id="downloadBook" class="sign up py-5">
     <div class="row align-items-center container my-5 mx-auto">
         <div class="text col-lg-12 col-md col-12 justify-content-center text-center">
-            <h6>Ace Your Interview</h6>
+
             <h2>Download our preparation book with more than 20 mock tests</h2>
             <a href="errorPage.html">
-                <button class="btn " type="submit">Download</button>
+                <button class="btn " type="submit">Download .pdf</button>
             </a>
         </div>
         <!--        <div class="img col-lg-6 col-md-6 col-12 w-50 justify-content-center text-center">-->
@@ -149,8 +219,8 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        University of Stirling
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        AlgoView
     </div>
     <!-- Copyright -->
 

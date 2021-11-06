@@ -41,6 +41,7 @@ how to select the elements in the navbar (all 4 because of n)
     padding: 0.4rem 1.4rem;
     border-radius: 30px;
     border-color: #E0E7E9;
+    margin-left: 40px;
 }
 #navbarSupportedContent > a > button:hover{
     background: #A3C6C4   ;
@@ -48,7 +49,18 @@ how to select the elements in the navbar (all 4 because of n)
     transform: scale(1.1);
 
 }
+#dropdownMenuButton{
 
+    margin-left: 10px;
+    border: none;
+    color: #E0E7E9;
+}
+.fa-cog{
+    color: #E0E7E9;
+}
+#inputGroupSelect01{
+    padding:2px;
+}
 
 .mid{
     width: 100%;
