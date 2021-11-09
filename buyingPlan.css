@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/*navbar*/
 .navbar{
     background: #354649;
     padding: 1rem 8rem;
@@ -20,6 +21,46 @@ html{
 .navbar .navbar-brand{
     font-size: 1.4rem;
     font-weight: 700;
+    left: 0;
+}
+/*settings*/
+#dropdownMenuButton{
+
+    margin-left: 10px;
+    border: none;
+    color: #E0E7E9;
+}
+.fa-cog{
+    color: #E0E7E9;
+}
+#inputGroupSelect01{
+    padding:2px;
+}
+/*settings*/
+
+/*
+selects the elements in the navbar (all 4 because of n)
+ */
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #E0E7E9;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+/*sign in button*/
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{
+    color: #A3C6C4 ;
+}
+#navbarSupportedContent > a > button{
+    background: #E0E7E9  ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border-color: #E0E7E9;
+}
+#navbarSupportedContent > a > button:hover{
+    background: #A3C6C4   ;
+    border-color: #E0E7E9;
 }
 
 /*settings*/
