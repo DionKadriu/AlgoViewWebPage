@@ -10,8 +10,9 @@
 <body data-spy="scroll" data-target="navbarSupportedContent ">
 
 <header>
+    <!--    The navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><i class="fas fa-atom fa-1x"></i>AlgoView</a>
+        <a class="navbar-brand" href="HomePage.html"> <i class="fas fa-atom fa-1x"> </i>AlgoView</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +22,7 @@
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="HomePage.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -34,7 +35,10 @@
                         <a class="dropdown-item" href="algorithmPage.html">Algorithms</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="InterviewPrep.html">Interview Prep</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Practice.html">Practice</a>
                     </div>
+
                 </li>
 
                 <li class="nav-item">
@@ -43,26 +47,22 @@
 
             </ul>
             <a href="signInPage.html">
-                <button class="btn text-dark" type="submit">Sign In</button>
+                <button class="btn text-dark" type="submit">Sign In / Register</button>
             </a>
             <div class="btn-group">
-                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                     <i class="fas fa-cog"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href=""><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="changeFont">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Change the font
-                        </label>
-                    </div></a></li>
-                    <li><a class="dropdown-item" href=""><a class="dropdown-item" href=""><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="changeColors">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Change the color
-                        </label>
-                    </div></a></a></li>
+
+                    <li><a class="dropdown-item" href="#">Change the font <i class="fas fa-font"></i></a></li>
+
+                    <li><a class="dropdown-item" href="#">Change the color <i class="fas fa-tint"></i></a></li>
+
                     <li><a class="dropdown-item" href="#">Dictate <i class="fas fa-microphone"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Change Language <i class="fas fa-language"></i> </a></li>
+
                 </ul>
             </div>
         </div>
@@ -76,12 +76,14 @@
         <div class="hero text-center">
             <h2 class="text-light display-4 font-weight-bold">Welcome to Algorithms</h2>
             <p class="text-light mx-auto">This is where your journey begins</p>
-            <a class="text-dark" href="#">Practice</a>
+            <a class="text-dark" href="Practice.html">Practice</a>
         </div>
     </div>
 </header>
 
+<!--progress bar section-->
 <section id="progressBar">
+    <!--    Aligns the text on the left size of the progress bar by creating different columns as placeholders-->
     <div class="text col-sm-4 justify-content-center text-center">
         <h2>Algorithms Progress</h2>
     </div>
@@ -96,34 +98,37 @@
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
             <defs>
                 <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#e91e63" />
-                    <stop offset="100%" stop-color="#673ab7" />
+                    <stop offset="0%" stop-color="#e91e63"/>
+                    <stop offset="100%" stop-color="#673ab7"/>
                 </linearGradient>
             </defs>
-            <circle cx="80  " cy="80" r="69.3" stroke-linecap="round" />
+            <circle cx="80  " cy="80" r="69.3" stroke-linecap="round"/>
         </svg>
     </div>
     <script>
-        let number=document.getElementById("number")
-        let counter=0;
-        setInterval(()=>{
-            if (counter===45){
+<!--  sets an interval to 45 so that the count of the number will stop when the bar is filled 45%   -->
+        let number = document.getElementById("number")
+        let counter = 0;
+        setInterval(() => {
+            if (counter === 45) {
                 clearInterval();
-            }else{
-                counter+=1;
-                number.innerHTML=counter+"%"
+            } else {
+                counter += 1;
+                number.innerHTML = counter + "%"
             }
 
-        },45)
+        }, 45)
 
     </script>
 
 </section>
-<!--The small sections begin here-->
+
+<!--a small break just to separate the two sections -->
+<hr class="my-0">
 
 <!--Binary Search-->
 <section id="binarySearch" class="lightBackground py-5">
-    <div class="row align-items-center">ss
+    <div class="row align-items-center">
         <div class="col px-5">
             <div class="row align-items-center">
                 <div class="text col-sm-11 ">
@@ -234,7 +239,7 @@
     </div>
 </section>
 
-<!--QuickSort-->
+<!--depthFirstSearch-->
 <section id="depthFirstSearch" class="darkBackground py-5">
     <div class="row align-items-center">
 
@@ -279,7 +284,7 @@
 </section>
 
 <!--Breadth-First Search-->
-<section id="depthFirst" class="lightBackground py-5">
+<section id="breadthFirstSearch" class="lightBackground py-5">
     <div class="row align-items-center">ss
         <div class="col px-5">
             <div class="row align-items-center">
@@ -297,7 +302,8 @@
                     <h2>Idea</h2>
                     <h4>
                         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </div></h4>
+                        </div>
+                    </h4>
                 </div>
                 <div class="text col-sm-5">
                     <h2>Complexity</h2>
@@ -320,7 +326,7 @@
     <!-- Footer Elements -->
     <div class="container">
 
-        <!-- Social buttons -->
+        <!-- Social media buttons -->
         <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
                 <a class="btn-floating btn-fb mx-2">
@@ -349,8 +355,8 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2021 Copyright:
-       AlgoView
+    <div class="footer-copyright  text-light text-center py-3">© 2021 Copyright:
+        AlgoView
     </div>
     <!-- Copyright -->
 

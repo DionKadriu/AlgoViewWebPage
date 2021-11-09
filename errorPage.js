@@ -1,8 +1,3 @@
-/*
-  Inspired by: "Error, 404"
-  By: Sujeet Mishra
-  Link: https://dribbble.com/shots/4571035-Error-404
-*/
 
 let oh = document.querySelector('.circle.oh');
 

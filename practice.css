@@ -6,11 +6,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/*scrolling of the page*/
 html {
     scroll-behavior: smooth;
 }
-
+/*navbar*/
 .navbar {
     background: #354649;
     padding: 1rem 8rem;
@@ -39,6 +39,8 @@ html {
 /*
 how to select the elements in the navbar (all 4 because of n)
  */
+
+/*navbar css (buttons and text)*/
 #navbarSupportedContent > ul > li:nth-child(n) > a {
     color: #E0E7E9;
     font-size: 1.1rem;
@@ -61,86 +63,6 @@ how to select the elements in the navbar (all 4 because of n)
     background: #A3C6C4   ;
     border-color: #E0E7E9;
     transform: scale(1.1);
-}
-
-.darkBackground {
-    background: #354649;
-}
-
-.darkBackground .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.darkBackground .text h1 {
-    color: #6C7A89;
-    font-weight: 800;
-    font-size: 3rem;
-    letter-spacing: 1px;
-}
-
-.darkBackground .text h2 {
-    color: #6C7A89;
-    font-weight: 600;
-    font-size: 2rem;
-    letter-spacing: 1px;
-}
-
-.darkBackground .text h3 {
-    color: #F7F5F4;
-    font-weight: 500;
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
-    padding-bottom: 1rem;
-}
-
-.darkBackground .text h4 {
-    color: #F7F5F4;
-    font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 1.5px;
-}
-
-.lightBackground {
-    background: #E0E7E9;
-}
-
-.lightBackground .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.lightBackground .text h1 {
-    color: #6C7A89;
-    font-weight: 800;
-    font-size: 3rem;
-    letter-spacing: 1px;
-}
-
-.lightBackground .text h2 {
-    color: #6C7A89;
-    font-weight: 600;
-    font-size: 2rem;
-    letter-spacing: 1.5px;
-}
-
-.lightBackground .text h3 {
-    color: #354649;
-    font-weight: 500;
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
-    padding-bottom: 1rem;
-}
-
-.lightBackground .text h4 {
-    color: #354649;
-    font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 1.5px;
 }
 
 body > footer {
@@ -168,7 +90,10 @@ body > footer .container {
     }
 }
 
-
+#editor{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
 #editor > div > div.text.align-items-center.col-lg-6.col-md.col-12.justify-content-center.text-center > div > div > a:nth-child(n) > button {
     background: #E0E7E9;
     font-weight: 600;
@@ -207,6 +132,7 @@ body > footer .container {
     border-color: #E0E7E9;
     transform: scale(1.1);
 }
+/*flip-cards colors, sizes and padding nad rotation*/
 #flipCards {
     padding-top: 100px;
     background: #E0E7E9;
@@ -247,8 +173,8 @@ body > footer .container {
 }
 
 .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background: #354649;
+    color: #E0E7E9;
     transform: rotateY(180deg);
 }
 
@@ -256,6 +182,7 @@ body > footer .container {
     justify-content: center;
 
 }
+/*recommended Site color on the backgorund*/
 #recommendedSite{
     background-color: #E0E7E9;
 }

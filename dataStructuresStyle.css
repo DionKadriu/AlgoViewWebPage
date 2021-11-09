@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*scrolling through the page*/
 html {
     scroll-behavior: smooth;
 }
@@ -64,9 +65,10 @@ how to select the elements in the navbar (all 4 because of n)
     transform: scale(1.1);
 }
 
+/*video and elements positioning, colors and sizes*/
 .mid {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -189,6 +191,7 @@ how to select the elements in the navbar (all 4 because of n)
     letter-spacing: 1.5px;
 }
 
+/*footer color and text padding and weight*/
 body > footer {
     background: #354649 !important;
     font-weight: 600;
@@ -282,6 +285,7 @@ svg {
     right: 0;
 }
 
+/*start and end of the stroke*/
 @keyframes anim {
     100% {
         stroke-dashoffset:165;

@@ -13,7 +13,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><i class="fas fa-atom fa-1x"></i>AlgoView</a>
+        <a class="navbar-brand" href="HomePage.html"> <i class="fas fa-atom fa-1x"> </i>AlgoView</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="HomePage.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -36,7 +36,10 @@
                         <a class="dropdown-item" href="algorithmPage.html">Algorithms</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="InterviewPrep.html">Interview Prep</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Practice.html">Practice</a>
                     </div>
+
                 </li>
 
                 <li class="nav-item">
@@ -45,7 +48,7 @@
 
             </ul>
             <a href="signInPage.html">
-                <button class="btn text-dark" type="submit">Sign In</button>
+                <button class="btn text-dark" type="submit">Sign In / Register</button>
             </a>
             <div class="btn-group">
                 <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
@@ -53,23 +56,14 @@
                     <i class="fas fa-cog"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="changeFont">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Change the font
-                            </label>
-                        </div>
-                    </a></li>
-                    <li><a class="dropdown-item" href=""><a class="dropdown-item" href="">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="changeColors">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Change the color
-                            </label>
-                        </div>
-                    </a></a></li>
+
+                    <li><a class="dropdown-item" href="#">Change the font <i class="fas fa-font"></i></a></li>
+
+                    <li><a class="dropdown-item" href="#">Change the color <i class="fas fa-tint"></i></a></li>
+
                     <li><a class="dropdown-item" href="#">Dictate <i class="fas fa-microphone"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Change Language <i class="fas fa-language"></i> </a></li>
+
                 </ul>
             </div>
         </div>
@@ -84,55 +78,10 @@
             <h2 class="text-light display-4 font-weight-bold">Succeed in your interview</h2>
             <p class="text-light mx-auto ">Prepare for your interviews with the help of certified specialists.<br>Pick a
                 date and schedule your meeting </p>
-
-
-            <a class="text-dark" href="errorPage.html">Schedule</a>
+            <a class="text-dark" href="errorPage.html">Schedule a Meeting</a>
         </div>
     </div>
 </header>
-
-<!--progress bar-->
-<section id="progressBar">
-    <div class="text col-sm-4 justify-content-center text-center">
-        <h2>Interview Prep Progress</h2>
-    </div>
-    <div class="skill">
-        <div class="outer">
-            <div class="inner">
-                <div id="number">
-                    65%
-                </div>
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-            <defs>
-                <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#e91e63"/>
-                    <stop offset="100%" stop-color="#673ab7"/>
-                </linearGradient>
-            </defs>
-            <circle cx="80  " cy="80" r="69.3" stroke-linecap="round"/>
-        </svg>
-    </div>
-    <script>
-        let number = document.getElementById("number")
-        let counter = 0;
-        setInterval(() => {
-            if (counter === 5) {
-                clearInterval();
-            } else {
-                counter += 1;
-                number.innerHTML = counter + "%"
-            }
-
-        }, 270)
-
-    </script>
-
-</section>
-
-<!--progress bar-->
-
 
 <section id="service" class="service py-5">
     <div class="col mx-auto align-items-center my-5">
@@ -219,7 +168,7 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <div class="footer-copyright text-light text-center py-3">© 2021 Copyright:
         AlgoView
     </div>
     <!-- Copyright -->

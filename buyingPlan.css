@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/*scrolling set to smooth*/
 html{
     scroll-behavior: smooth;
 }
@@ -64,6 +64,7 @@ how to select the elements in the navbar (all 4 because of n)
     transform: scale(1.1);
 }
 
+/*footer*/
 body > footer{
     background: #354649!important;
     font-weight: 600;
@@ -76,6 +77,8 @@ body > footer{
     padding:0;
     box-sizing: border-box;
 }
+
+/*adds an image on the full background*/
 body{
     background-image: url("HomePage/p.jpg");
     min-height: 100vh;
@@ -84,6 +87,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+/*cards css*/
 #buyingPlan > div > div > div.card.card-pricing.popular.shadow.text-center.px-3.mb-4 > span{
    background-color: #354649 ;
     color: #354649;
@@ -101,6 +106,7 @@ body{
     padding: .5rem 0;
     color: #6c757d;
 }
+
 
 #buyingPlan\  > div > div > div:nth-child(1) > span{
     color: #354649;
@@ -146,5 +152,4 @@ body > footer .container{
 }
 #buyingPlan > div > div > div.card.card-pricing.popular.shadow.text-center.px-3.mb-4 > div.bg-transparent.card-header.pt-4.border-0 > h1 > span.h6.text-muted.ml-2{
     color: #354649;
-
 }

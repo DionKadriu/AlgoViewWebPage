@@ -10,8 +10,9 @@
 <body data-spy="scroll" data-target="navbarSupportedContent ">
 
 <header>
+<!--    the navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><i class="fas fa-atom fa-1x"></i>AlgoView</a>
+        <a class="navbar-brand" href="HomePage.html"> <i class="fas fa-atom fa-1x"> </i>AlgoView</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +22,7 @@
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="HomePage.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -34,7 +35,10 @@
                         <a class="dropdown-item" href="algorithmPage.html">Algorithms</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="InterviewPrep.html">Interview Prep</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Practice.html">Practice</a>
                     </div>
+
                 </li>
 
                 <li class="nav-item">
@@ -43,26 +47,22 @@
 
             </ul>
             <a href="signInPage.html">
-                <button class="btn text-dark" type="submit">Sign In</button>
+                <button class="btn text-dark" type="submit">Sign In / Register</button>
             </a>
             <div class="btn-group">
-                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                     <i class="fas fa-cog"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href=""><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="changeFont">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Change the font
-                        </label>
-                    </div></a></li>
-                    <li><a class="dropdown-item" href=""><a class="dropdown-item" href=""><div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="changeColors">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Change the color
-                        </label>
-                    </div></a></a></li>
+
+                    <li><a class="dropdown-item" href="#">Change the font <i class="fas fa-font"></i></a></li>
+
+                    <li><a class="dropdown-item" href="#">Change the color <i class="fas fa-tint"></i></a></li>
+
                     <li><a class="dropdown-item" href="#">Dictate <i class="fas fa-microphone"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Change Language <i class="fas fa-language"></i> </a></li>
+
                 </ul>
             </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="hero text-center">
             <h2 class="text-light display-4 font-weight-bold">Welcome to Data Structures</h2>
             <p class="text-light mx-auto">Continue learning to ace the interview</p>
-            <a class="text-dark" href="Editor.html">Practice</a>
+            <a class="text-dark" href="Practice.html">Practice</a>
         </div>
     </div>
 </header>
@@ -352,7 +352,7 @@
     <!-- Footer Elements -->
     <div class="container">
 
-        <!-- Social buttons -->
+        <!-- Social media buttons -->
         <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
                 <a class="btn-floating btn-fb mx-2">
@@ -381,7 +381,7 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <div class="footer-copyright text-light text-center py-3">© 2021 Copyright:
         AlgoView
     </div>
     <!-- Copyright -->

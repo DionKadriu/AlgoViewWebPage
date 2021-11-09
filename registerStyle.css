@@ -6,7 +6,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body > section > div > div > div > div > div > div > div.col-md-10.col-lg-6.col-xl-5.order-2.order-lg-1 > form > div.d-flex.justify-content-center.mx-4.mb-3.mb-lg-4 > button{
+/*registration button styling*/
+#registration{
     background: #A3C6C4;
     font-weight: 600;
     padding: 0.4rem 1.4rem;
@@ -15,7 +16,7 @@ body > section > div > div > div > div > div > div > div.col-md-10.col-lg-6.col-
     color: #354649;
 }
 
-body > section > div > div > div > div > div > div > div.col-md-10.col-lg-6.col-xl-5.order-2.order-lg-1 > form > div.d-flex.justify-content-center.mx-4.mb-3.mb-lg-4 > button:hover{
+#registration:hover{
     background: #354649 ;
     border-color: #354649 ;
     color:#E0E7E9;

@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*scroll or the website smooth*/
 html{
     scroll-behavior: smooth;
 }
@@ -25,6 +26,8 @@ html{
 /*
 how to select the elements in the navbar (all 4 because of n)
  */
+
+/*sign in / register button*/
 #navbarSupportedContent > ul > li:nth-child(n) > a
 {
     color: #E0E7E9;
@@ -33,6 +36,7 @@ how to select the elements in the navbar (all 4 because of n)
 }
 #navbarSupportedContent > ul > li:nth-child(n) > a:hover,
 #navbarSupportedContent > ul > li:nth-child(n) > a:active{
+
     color: #A3C6C4 ;
 }
 #navbarSupportedContent > a > button{
@@ -42,13 +46,14 @@ how to select the elements in the navbar (all 4 because of n)
     border-radius: 30px;
     border-color: #E0E7E9;
     margin-left: 40px;
-}
-#navbarSupportedContent > a > button:hover{
-    background: #A3C6C4   ;
-    border-color: #E0E7E9;
-    transform: scale(1.1);
+
 
 }
+#navbarSupportedContent > a > button:hover{
+    background: #A3C6C4;
+    border-color: #E0E7E9;
+}
+/*setting dropdown colors and positioning*/
 #dropdownMenuButton{
 
     margin-left: 10px;
@@ -62,6 +67,7 @@ how to select the elements in the navbar (all 4 because of n)
     padding:2px;
 }
 
+/*mid section video*/
 .mid{
     width: 100%;
     height: 90vh;
@@ -107,8 +113,9 @@ how to select the elements in the navbar (all 4 because of n)
     background: #E0E7E9;
 }
 
+/*about us - text color, size and positioning*/
 .about{
-    background: #354649;
+    background: #E0E7E9;
 }
 
 .about .text{
@@ -126,54 +133,21 @@ how to select the elements in the navbar (all 4 because of n)
     letter-spacing: 1px;
 }
 
-.about .text h4{
-    color: #F7F5F4;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 1.5px;
-}
-
-.downloadBook a{
-    background: #A3C6C4  ;
-    font-weight: 600;
-    padding: 0.6rem 1.4rem;
-    border-radius: 30px;
-    text-decoration: none;
-}
-.discovery{
-
-}
-
-.discovery .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: auto;
-}
-
-.discovery .text h2{
-    color: #6C7A89;
-    font-weight: 800;
-    font-size: 3rem;
-    letter-spacing: 1px;
-}
-
-.discovery .text h4{
+#aboutDescription{
     color: #354649;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.3rem;
     letter-spacing: 1.5px;
 }
 
-.discovery .text a{
-    background: #111;
-    font-weight: 500;
-    padding: 0.6rem 1.4rem;
-    border-radius: 30px;
-    text-decoration: none;
-    color: #fff;
+
+#calculcatorReference{
+    color: #354649;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
 }
+
 
 .service{
     background: #354649;
@@ -227,45 +201,28 @@ body > footer .container{
     }
 }
 
-#downloadBook > div > div.text.col-lg-6.col-md.col-12 > button{
-    background: forestgreen  ;
-    font-weight: 600;
-    padding: 0.4rem 1.4rem;
-    border-radius: 30px;
-    border-color: #E0E7E9;
-}
-#scheduleMeeting > div > div > button{
-    background: #E0E7E9  ;
-    font-weight: 600;
-    padding: 0.4rem 1.4rem;
-    border-radius: 30px;
-    border-color: #E0E7E9;
-}
-#scheduleMeeting{
-    background: #354649;
-}
-#scheduleMeeting > div > div > p > span{
-    color: white;
-}
-
-#scheduleMeeting > div > div >h6{
-    color: white;
-}
-#scheduleMeeting > div > div >h2{
-    color: white;
-}
-#scheduleMeeting > div > div >h6{
-    color: white;
-}
+/*progress bar colors, width and padding in-between*/
 #progressBar{
-    height: 80vh;
+    background: #354649;
+    height: 90vh;
 }
 #progressBar > div:nth-child(n) > div.progress{
-margin-left: 80px;
+    margin-left: 80px;
     margin-right: 80px;
 }
-#progressBar > div:nth-child(n) {
+#progressBar > div:nth-child(1){
+color: #E0E7E9;
+    padding-top: 100px;
+}
+#progressBar > div:nth-child(2),#progressBar > div:nth-child(3) {
+    color: #E0E7E9;
     margin-top: 100px;
+}
+#progressBar > div:nth-child(3){
+    padding-bottom: 100px;
+}
+#progressBar > div:nth-child(n) > div.progress > b > h7{
+    color: #354649;
 }
 label {
     display: block;
@@ -310,6 +267,12 @@ label {
     background: #A3C6C4;
     color: #354649;
 }
-#calendarEstimator{
+#studyCalculator{
     background-color: #E0E7E9;
+}
+/*hr separation*/
+#seperation{
+    color: #E0E7E9;
+
+    margin-bottom: 10px;
 }
